@@ -1,6 +1,7 @@
 <!DOCTYPE html>
  <html>
    <head>
+     <meta charset="utf-8">
      <title>Bicloud</title>
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -9,13 +10,47 @@
 
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href="img/icon.png" rel="shortcut icon" type="image/png">
      <link rel="stylesheet" href="css/style.css">
    </head>
-
    <body>
      <div class="container">
-       <!--contenido de la página-->
-      </div>
+       <div class="row">
+         <div class="logo">
+           <img src="img/bicloud_logo.png" alt="bicloud">
+           <p>Bicloud es una empresa de tecnología web, que brinda a sus clientes una variedad de crecimiento comercial y gran valor,
+             enfocado a generar marca, imagen y posicionamiento a nivel nacional e internacional.</p>
+          </div>
+          <div class="contact">
+            <a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">account_box</i></a>
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal">
+               <div class="modal-footer">
+                 <a href="#!" class="modal-action modal-close waves-green btn-flat"><i class="material-icons">close</i></a>
+               </div>
+               <div class="modal-content">
+                   <div class="person">
+                     <div class="chip">
+                      <img src="img/ceo1.jpg" alt="Contact Person">
+                      CEO - Camilo Andres Pulido Rubiano
+                    </div><br>
+                    <a href="mailto:camilo.pulido@bicloudtec.com">camilo.pulido@bicloudtec.com</a><br>
+                    <a href="tel:+573102860001">(+57) 310 286 00 01</a><br>
+                   </div>
+                   <div class="person">
+                     <div class="chip">
+                        <img src="img/cto.jpg" alt="Contact Person">
+                        CTO - Andres Felipe Larrotta Pino
+                      </div><br>
+                         <a href="mailto:andres.larrotta@bicloudtec.com">andres.larrotta@bicloudtec.com</a><br>
+                         <a href="tel:+573014613072">(+57) 301 461 30 72</a>
+                   </div>
+               </div>
+
+             </div>
+          </div>
+        </div>
+       </div>
       <div id="particles-js"></div>
       <!--Js de las particulas -->
       <script src="js/particles.js"></script>
@@ -23,5 +58,13 @@
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+   $('.modal').modal();
+ });
+       $('#modal1').modal('open');
+       $('#modal1').modal('close');
+     </script>
    </body>
  </html>
